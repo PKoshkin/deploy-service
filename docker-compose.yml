@@ -1,13 +1,13 @@
 services:
-  mistralai-Mistral-7B-Instruct-v0.3:
+  teknium-OpenHermes-2.5-Mistral-7B:
     command:
     - --model
-    - mistralai/Mistral-7B-Instruct-v0.3
+    - teknium/OpenHermes-2.5-Mistral-7B
     - --disable-log-requests
     - --trust-remote-code
     - --gpu-memory-utilization
     - '0.32'
-    container_name: mistralai-Mistral-7B-Instruct-v0.3
+    container_name: teknium-OpenHermes-2.5-Mistral-7B
     deploy:
       resources:
         reservations:
