@@ -1,13 +1,13 @@
 services:
-  meta-llama-Llama-3.2-1B-Instruct:
+  mistralai-Mistral-7B-Instruct-v0.3:
     command:
     - --model
-    - meta-llama/Llama-3.2-1B-Instruct
+    - mistralai/Mistral-7B-Instruct-v0.3
     - --disable-log-requests
     - --trust-remote-code
     - --gpu-memory-utilization
     - '0.32'
-    container_name: meta-llama-Llama-3.2-1B-Instruct
+    container_name: mistralai-Mistral-7B-Instruct-v0.3
     deploy:
       resources:
         reservations:
@@ -25,4 +25,3 @@ services:
     restart: always
     volumes:
     - ${HUGGINGFACECACHE}:/root/.cache/huggingface
-version: '3.7'
